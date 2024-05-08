@@ -27,9 +27,12 @@ url: "lumesque.github.io" # the base hostname & protocol for your site, e.g. htt
 github_username:  Lumesque
 
 # Build settings
-theme: minima
+#
+#theme: minima
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
