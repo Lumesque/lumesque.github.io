@@ -28,8 +28,8 @@ github_username:  Lumesque
 
 # Build settings
 #
-#theme: minima
 remote_theme: pages-themes/hacker@v0.2.0
+theme: hacker
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
