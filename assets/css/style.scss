@@ -11,7 +11,12 @@
 
 .container .sidebar {
     margin-bottom: 30px;
+    margin-top: 1%;
     text-align: center;
-    margin-left: auto;
-    margin-right: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+#main_content {
+    display: inline-block;
 }

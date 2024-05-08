@@ -19,7 +19,7 @@ if [[ "$#" -ne 1 ]]; then
 fi
 
 folder="./_posts"
-name="`tr ' ' '-' <<<"$1"`"
+name="`tr ' ' '-' <<< "$1"`"
 if ! [ -d "$folder" ]; then
     # Check if we're inside the folder
     if [[ "$(basename "$(pwd)")" != "_posts" ]]; then
@@ -31,9 +31,9 @@ if ! [ -d "$folder" ]; then
     fi
 fi
 
-file="$folder/$(date +'%Y-%m-%d')-$1.md"
+file="$folder/$(date +'%Y-%m-%d')-$name.md"
 
-cat << EOF > $file
+cat << EOF > "$file"
 ---
 layout: post
 title: "$1"
