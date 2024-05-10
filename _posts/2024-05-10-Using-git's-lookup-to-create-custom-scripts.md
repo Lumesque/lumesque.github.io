@@ -3,6 +3,14 @@ layout: post
 title: "Using git's lookup to create custom scripts"
 date: 2024-05-10 16:50:53 -0000
 categories: [git,python,pypi,init,hatch,workflows,git-workflows]
+tags: 
+- git
+- python
+- pypi
+- init
+- hatch
+- workflows
+- git-workflows
 ---
 
 ## Table of Contents
@@ -11,6 +19,7 @@ categories: [git,python,pypi,init,hatch,workflows,git-workflows]
 - [Automating Git Workflows](#automating-git-workflows)
 - [Using gits lookup](#using-gits-lookup)
 - [The Script](#the-script)
+- [Git-pyinit](#git-pyinit)
 
 
 
@@ -30,7 +39,7 @@ When you create a project, it'll create a directory structure like this, and tha
 
 Git workflows are a great help in making sure projects are formatted in a manner that is easy to read, and is common amongst individuals, as well as allowing for others to contribute to the project and keep to the standards. For creating github workflows, you'll have to have a __token__ that allows you to have workflow control.
 
-Lets take a look at an example one that uses `pyflakes`
+Lets take a look at an example one that uses `isort`
 
 ```yaml
 name: Linting Stage
